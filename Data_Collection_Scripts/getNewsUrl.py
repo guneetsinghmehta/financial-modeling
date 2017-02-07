@@ -6,6 +6,7 @@ Created on Feb 6, 2017
 import requests
 import json
 import re
+from parser import get_article_from_url
 
 #gets tickers
 url='https://newsapi.org/v1/sources?language=en'
@@ -25,12 +26,14 @@ for data in dataAll:
 
 
 #gets data
-f = open('NewsUrl.txt', 'w')
 for ticker in tickerList:
     url='https://newsapi.org/v1/articles?source='+ticker+'&sortBy=top&apiKey=bd086be1b4544053ad6948886bc06b73'
     urlStr=requests.get(url).content
     companyJson=json.loads(urlStr);
-    json.dump(companyJson,f)
-    #print companyJson
-f.close()
+    articleJson = companyJson['articles']
+    for article in articleJson:
+	f = open('../Data/news_articles/'+str(companyJson['source'])+'_'+str(article['publishedAt'])+'.txt', 'w')
+	news = get_article_from_url(article['url'])
+    	f.write(news)
+	f.close()
     

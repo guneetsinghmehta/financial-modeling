@@ -1,0 +1,129 @@
+Copyright 2017 Time Inc. All rights reserved. Reproduction in whole or in part without permission is prohibited. Hamilton star explains origin of ‘sisterhood’ reference at Super Bowl Jessica Derschowitz @jessicasara Updated February 7, 2017 at 11:52am EST Before the New England Patriots went on to defeat the Atlanta Falcons at Super Bowl LI on Sunday, there was a different kind of patriotic celebration on the field in Houston — a reunion of Hamilton ’s original Schuyler Sisters. Renée Elise Goldsberry, Phillipa Soo, and Jasmine Cephas Jones — who originated the roles of Angelica, Eliza, and Peggy Schuyler in the Broadway smash — performed “America the Beautiful” ahead of Sunday’s big game, and earned enormous applause when they added the words and sisterhood  to the line, God shed his grace on thee/ And crown thy good with brotherhood/ From sea to shining sea! Speaking to EW on Tuesday, Goldsberry said the idea for that addition came from the three of them. That was our idea. We are sisters [ laughs ] and it only seemed fitting to shout out the brothers and the sisters, she said. One thing that’s been really special being in and representing Hamilton is celebrating women’s role in history, which is sometimes lost. So we’ve had a lot of practice and help writing that amongst a lot of really talented women and this was another opportunity to do that. And I’m really grateful that it was so well received and so supported by the NFL. The original #SchuylerSisters , @JasCephasJones @reneeelisegolds @Phillipasoo , sang America the Beautiful at tonight s Super Bowl. #SB51 pic.twitter.com/LLuCwsKY2o Hamilton (@HamiltonMusical) February 6, 2017 The three stars have all departed the Hamilton cast (Soo exited in July, Goldsberry in September, and Cephas Jones in December), so the reunion was a special treat for fans of the musical, and the actresses themselves. We had the most amazing experience, said Goldsberry. It was the best reunion. We hadn’t all been together since Phillipa left the show, and so it felt like a family reunion. And then on top of that, I’m from Houston, so that was an extra special treat to be at home with my mother and my brother and my children and my husband, and just to see the city celebrated in that way was really special. I had the opportunity to share that city with the girls, which was also really fun.” Show Full Article Sponsored Stories Comments var preDrupalDisqusId = [],
+			disqusId = [],
+			disqus_config = function () {
+				if ( preDrupalDisqusId[0] ) {
+					this.page.identifier = preDrupalDisqusId[0];
+				} else if ( disqusId[0] ) {
+					this.page.identifier = disqusId[0];
+				} else {
+					this.page.identifier = '5571120';
+				}
+			};
+		(function() {
+			var d = document, s = d.createElement('script');
+				if ( disqusId[0] || document.location.hostname === 'ew.com' ) {
+					s.src = '//ewm.disqus.com/embed.js';
+				} else {
+					s.src = '//ewm-people-dev.disqus.com/embed.js';
+				}
+			s.setAttribute('data-timestamp', +new Date());
+			(d.head || d.body).appendChild(s);
+		})(); Please enable JavaScript to view the comments powered by Disqus. window.peopleAdMappings = window.peopleAdMappings || {}; peopleAdMappings['peopleAdfootercmad'] = {"collapse":true,"id":"peopleAdfootercmad","oop":false,"companion":false,"size":[248,86],"pos_group_name":"footer-cm-ad","sitename":"cm.enw","zone":"music","targeting":{"cmpos":["globalfooter"],"cmtyp":["tout"],"pos":1,"pos_group_name":"footer-cm-ad","adLoadMethod":"page"},"sizes":[[[1024,0],[[664,230]]],[[601,0],[[664,230]]],[[0,0],[[248,86]]]],"ad_name":"footer-cm-ad"};;
+					// Init defaults
+					window.time_dfp = window.time_dfp || [];
+					window.peopleAdMappings['_renderedAds'] = window.peopleAdMappings['_renderedAds'] || {};
+					window.time_dfp.push( function() { time_dfp.defineSlot(window.peopleAdMappings['peopleAdfootercmad'])});
+					if ( 'undefined' === typeof window.peopleAdMappings['footer-cm-ad'] || 'undefined' === typeof window.peopleAdMappings['footer-cm-ad']['default'] ) {
+						window.peopleAdMappings['footer-cm-ad'] = {};
+						// Remember, this is going to just be a reference not a copy.
+						window.peopleAdMappings['footer-cm-ad']['default'] = window.peopleAdMappings['peopleAdfootercmad'];
+					};
+					// Remember, this is going to just be a reference not a copy.
+					window.peopleAdMappings['footer-cm-ad']['peopleAdfootercmad'] = window.peopleAdMappings['peopleAdfootercmad'];
+					window.peopleAdMappings['_renderedAds']['peopleAdfootercmad'] = window.peopleAdMappings['peopleAdfootercmad'];
+					// POS Groups information. More from EW Breaking Big: 7 new artists to hear now Ranking Each 'Fifty Shades Darker' Song's Kink Factor Carly Rae Jepsen previews Lil Yachty collaboration, new album Alison Krauss premieres stark new 'Losing You' video Katy Perry joins the list of Grammy performers See More Stories Most Popular 1 Alison Krauss premieres stark new 'Losing You' video 2 Lady Gaga at the Super Bowl: Leaps, lights, and low-key politics See Also Entertainment Weekly window.peopleAdMappings = window.peopleAdMappings || {}; peopleAdMappings['peopleAdsubscribelinkcmadfooter'] = {"collapse":true,"id":"peopleAdsubscribelinkcmadfooter","oop":false,"companion":false,"size":[94,13],"pos_group_name":"subscribe-link-cm-ad-footer","sitename":"cm.enw","zone":"music","targeting":{"cmtyp":["text"],"cmpos":["globalftrsublnk"],"pos":1,"pos_group_name":"subscribe-link-cm-ad-footer","adLoadMethod":"page"},"sizes":[[[1024,0],[[94,13]]],[[601,0],[[94,13]]],[[0,0],[[94,13]]]],"ad_name":"subscribe-link-cm-ad-footer"};;
+					// Init defaults
+					window.time_dfp = window.time_dfp || [];
+					window.peopleAdMappings['_renderedAds'] = window.peopleAdMappings['_renderedAds'] || {};
+					window.time_dfp.push( function() { time_dfp.defineSlot(window.peopleAdMappings['peopleAdsubscribelinkcmadfooter'])});
+					if ( 'undefined' === typeof window.peopleAdMappings['subscribe-link-cm-ad-footer'] || 'undefined' === typeof window.peopleAdMappings['subscribe-link-cm-ad-footer']['default'] ) {
+						window.peopleAdMappings['subscribe-link-cm-ad-footer'] = {};
+						// Remember, this is going to just be a reference not a copy.
+						window.peopleAdMappings['subscribe-link-cm-ad-footer']['default'] = window.peopleAdMappings['peopleAdsubscribelinkcmadfooter'];
+					};
+					// Remember, this is going to just be a reference not a copy.
+					window.peopleAdMappings['subscribe-link-cm-ad-footer']['peopleAdsubscribelinkcmadfooter'] = window.peopleAdMappings['peopleAdsubscribelinkcmadfooter'];
+					window.peopleAdMappings['_renderedAds']['peopleAdsubscribelinkcmadfooter'] = window.peopleAdMappings['peopleAdsubscribelinkcmadfooter'];
+					// POS Groups information. Facebook Tumblr Instagram Pinterest YouTube Google+ Copyright 2017 Time Inc. All rights reserved. Reproduction in whole or in part without permission is prohibited. window.peopleSettings = {"ads":{"lazyLoadClass":"ad-render-lazyload","adRenderedClass":"ad-rendered"}}; utag_data = {"author_name":"Jessica Derschowitz","channel":"ew","content_id":"5571120","content_package":"Super Bowl","content_package_id":"29030747","friendly_url":"http:\/\/ew.com\/music\/2017\/02\/07\/super-bowl-51-hamilton-schuyler-sister-sisterhood-reference-origin\/","is_logged_in":"no","page_name":"'Hamilton' star explains origin of 'sisterhood' reference at Super Bowl","publish_date":"2017-02-07T11:35:46+00:00","site_section1":"Music","tag_keywords":"super bowl","template_type":"article","site_display_format":"mobile"}; utag_data = {"author_name":"Jessica Derschowitz","channel":"ew","content_id":"5571120","content_package":"Super Bowl","content_package_id":"29030747","friendly_url":"http:\/\/ew.com\/music\/2017\/02\/07\/super-bowl-51-hamilton-schuyler-sister-sisterhood-reference-origin\/","is_logged_in":"no","page_name":"'Hamilton' star explains origin of 'sisterhood' reference at Super Bowl","publish_date":"2017-02-07T11:35:46+00:00","site_section1":"Music","tag_keywords":"super bowl","template_type":"article","site_display_format":"mobile"}; /* <![CDATA[ */
+var WPGroHo = {"my_hash":""};
+/* ]]> */ //initialize and attach hovercards to all gravatars
+		jQuery( document ).ready( function( $ ) {
+
+			if (typeof Gravatar === "undefined"){
+				return;
+			}
+
+			if ( typeof Gravatar.init !== "function" ) {
+				return;
+			}			
+
+			Gravatar.profile_cb = function( hash, id ) {
+				WPGroHo.syncProfileData( hash, id );
+			};
+			Gravatar.my_hash = WPGroHo.my_hash;
+			Gravatar.init( 'body', '#wp-admin-bar-my-account' );
+		}); window.WPCOM_sharing_counts = {"http:\/\/ew.com\/music\/2017\/02\/07\/super-bowl-51-hamilton-schuyler-sister-sisterhood-reference-origin\/":5571120}; var windowOpen;
+		jQuery(document).on( 'ready post-load', function(){
+			jQuery( 'a.share-facebook' ).on( 'click', function() {
+				if ( 'undefined' !== typeof windowOpen ){ // If there's another sharing window open, close it.
+					windowOpen.close();
+				}
+				windowOpen = window.open( jQuery(this).attr( 'href' ), 'wpcomfacebook', 'menubar=1,resizable=1,width=600,height=400' );
+				return false;
+			});
+		}); var windowOpen;
+		jQuery(document).on( 'ready post-load', function(){
+			jQuery( 'a.share-twitter' ).on( 'click', function() {
+				if ( 'undefined' !== typeof windowOpen ){ // If there's another sharing window open, close it.
+					windowOpen.close();
+				}
+				windowOpen = window.open( jQuery(this).attr( 'href' ), 'wpcomtwitter', 'menubar=1,resizable=1,width=600,height=350' );
+				return false;
+			});
+		}); Send to Email Address Your Name Your Email Address document.getElementById('jetpack-source_f_name').value = ''; Cancel Post was not sent - check your email addresses! Email check failed, please try again Sorry, your blog cannot share posts by email. /* <![CDATA[ */
+var wpcomVipAnalytics = {"is_404":"0","is_home":"0","is_single":"1","is_front_page":"0","is_archive":"0","percentToTrack":"1"};
+/* ]]> */ /* <![CDATA[ */
+var sharing_js_options = {"lang":"en","counts":"1"};
+/* ]]> */ // <![CDATA[
+(function() {
+try{ if ( window.external &&'msIsSiteMode' in window.external) { if (window.external.msIsSiteMode()) { var jl = document.createElement('script'); jl.type='text/javascript'; jl.async=true; jl.src='/wp-content/plugins/ie-sitemode/custom-jumplist.php'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(jl, s); } }
+}catch(e){}
+})();
+// ]]> _tkq = window._tkq || [];
+_stq = window._stq || [];
+_tkq.push(['storeContext', {'blog_id':'120599047','blog_tz':'-5','user_lang':'en','blog_lang':'en','user_id':'0'}]);
+_stq.push(['view', {'blog':'120599047','v':'wpcom','tz':'-5','user_id':'0','post':'5571120','subd':'ewedit'}]);
+function st_vt() {var x=document.createElement("img");x.src="http://pixel.wp.com/g.gif?blog=120599047&v=wpcomvt&tz=-5&user_id=0&post=5571120&subd=ewedit&rand="+Math.random();}
+_stq.push(['extra', {'crypt':'UE40eW5QN0p8M2Y/RE1BNmNJfGhxNCVxUDExYmtXL3N3eUdPaVlpSiZBcDFWLiYydDBzWlNidl84K0N8d1JEUTRRLzcmNFhNcSZSfkZydm5nNWpFS1srT09+OVRxZ0V3fDIzRGNMbElSd2ttfnhham5STSslSEZtdmJLPzVrS2QzLTksOEs1Ui83WG43WiZEY015L3p2R3NSSzRHSm1+eHxkcCwsbC1lYSxQTWpPWDJrMUJPVldtLG1xJkJmZHhRREtvWS9KLUtONT1rKzlILnk3XXN5d0Q2NDZPcS4uMD01XXhWclAmaz1tVDBSU1JGYUIsPTBYSlhtVnlNVjJteVJJem1PRi9daw=='}]);
+_stq.push([ 'clickTrackerInit', '120599047', '5571120' ]); if ( 'object' === typeof wpcom_mobile_user_agent_info ) {
+
+	wpcom_mobile_user_agent_info.init();
+	var mobileStatsQueryString = "";
+	
+	if( false !== wpcom_mobile_user_agent_info.matchedPlatformName )
+		mobileStatsQueryString += "&x_" + 'mobile_platforms' + '=' + wpcom_mobile_user_agent_info.matchedPlatformName;
+	
+	if( false !== wpcom_mobile_user_agent_info.matchedUserAgentName )
+		mobileStatsQueryString += "&x_" + 'mobile_devices' + '=' + wpcom_mobile_user_agent_info.matchedUserAgentName;
+	
+	if( wpcom_mobile_user_agent_info.isIPad() )
+		mobileStatsQueryString += "&x_" + 'ipad_views' + '=' + 'views';
+
+	if( "" != mobileStatsQueryString ) {
+		new Image().src = document.location.protocol + '//pixel.wp.com/g.gif?v=wpcom-no-pv' + mobileStatsQueryString + '&baba=' + Math.random();
+	}
+	
+} window.peopleAdMappings = window.peopleAdMappings || {}; peopleAdMappings['peopleAd1x6'] = {"collapse":true,"id":"peopleAd1x6","oop":false,"companion":false,"size":[1,6],"pos_group_name":"1x6","zone":"music","sizes":[[[1024,0],[[1,6]]],[[601,0],[[1,6]]]],"ad_name":"1x6","targeting":{"pos":1,"pos_group_name":"1x6","adLoadMethod":"page"}};;
+					// Init defaults
+					window.time_dfp = window.time_dfp || [];
+					window.peopleAdMappings['_renderedAds'] = window.peopleAdMappings['_renderedAds'] || {};
+					window.time_dfp.push( function() { time_dfp.defineSlot(window.peopleAdMappings['peopleAd1x6'])});
+					if ( 'undefined' === typeof window.peopleAdMappings['1x6'] || 'undefined' === typeof window.peopleAdMappings['1x6']['default'] ) {
+						window.peopleAdMappings['1x6'] = {};
+						// Remember, this is going to just be a reference not a copy.
+						window.peopleAdMappings['1x6']['default'] = window.peopleAdMappings['peopleAd1x6'];
+					};
+					// Remember, this is going to just be a reference not a copy.
+					window.peopleAdMappings['1x6']['peopleAd1x6'] = window.peopleAdMappings['peopleAd1x6'];
+					window.peopleAdMappings['_renderedAds']['peopleAd1x6'] = window.peopleAdMappings['peopleAd1x6'];
+					// POS Groups information.

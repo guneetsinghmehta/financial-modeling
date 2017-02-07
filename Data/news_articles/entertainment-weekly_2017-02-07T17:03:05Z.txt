@@ -1,0 +1,52 @@
+Copyright 2017 Time Inc. All rights reserved. Reproduction in whole or in part without permission is prohibited. Hear exclusive excerpts from this year's Grammy-nominated audiobooks Madeline Raynor @madelineraynor_ Posted on February 7, 2017 at 12:03pm EST Every year, the Recording Academy honors authors in the traditionally non-musical category,  Best Spoken Word Album, and this year, several big name celebrity memoirs are duking it out. Below, EW is excited to present exclusive excerpts from all five titles. The nominees are Amy Schumer s  The Girl With The Lower Back Tattoo , Carol Burnett s In Such Good Company , Patti Smith s M Train , and Elvis Costello s  Unfaithful Music Disappearing Ink . The fifth contender is John Doe s music history tome  Under The Big Black Sun: A Personal History of L.A. Punk . Hear new exclusive excerpts of these books, plus our original excerpt from  The Girl With The Lower Back Tattoo , first published in August. Tune into the 59th Annual Grammy Awards on Sunday, Feb. 12. 1. The Girl With The Lower Back Tattoo by Amy Schumer 2.   In Such Good Company  by Carol Burnett 3.  M Train by Patti Smith ( function() {
+			var func = function() {
+				var iframe_form = document.getElementById('wpcom-iframe-form-d55213b91a71e7e5f586c5aa8ecfda05-589a0492cef20');
+				var iframe = document.getElementById('wpcom-iframe-d55213b91a71e7e5f586c5aa8ecfda05-589a0492cef20');
+				if ( iframe_form && iframe ) {
+					iframe_form.submit();
+					iframe.onload = function() {
+						iframe.contentWindow.postMessage( {
+							'msg_type': 'poll_size',
+							'frame_id': 'wpcom-iframe-d55213b91a71e7e5f586c5aa8ecfda05-589a0492cef20'
+						}, window.location.protocol + '//wpcomwidgets.com' );
+					}
+				}
+
+				// Autosize iframe
+				var funcSizeResponse = function( e ) {
+					var origin = document.createElement( 'a' );
+					origin.href = e.origin;
+
+					// Verify message origin
+					if ( 'wpcomwidgets.com' !== origin.host )
+						return;
+
+					// Verify message is in a format we expect
+					if ( 'object' !== typeof e.data || undefined === e.data.msg_type )
+						return;
+
+					switch ( e.data.msg_type ) {
+						case 'poll_size:response':
+							var iframe = document.getElementById( e.data._request.frame_id );
+
+							if ( iframe && '' === iframe.width )
+								iframe.width = '100%';
+							if ( iframe && '' === iframe.height )
+								iframe.height = parseInt( e.data.height );
+
+							return;
+						default:
+							return;
+					}
+				}
+
+				if ( 'function' === typeof window.addEventListener ) {
+					window.addEventListener( 'message', funcSizeResponse, false );
+				} else if ( 'function' === typeof window.attachEvent ) {
+					window.attachEvent( 'onmessage', funcSizeResponse );
+				}
+			}
+			if (document.readyState === 'complete') { func.apply(); /* compat for infinite scroll */ }
+			else if ( document.addEventListener ) { document.addEventListener( 'DOMContentLoaded', func, false ); }
+			else if ( document.attachEvent ) { document.attachEvent( 'onreadystatechange', func ); }
+		} )(); 4.  Unfaithful Music Disappearing Ink  by Elvis Costello 5.  Under The Big Black Sun: A Personal History of L.A. Punk  by John Doe with Tom DeSavia Copyright 2017 Time Inc. All rights reserved. Reproduction in whole or in part without permission is prohibited.

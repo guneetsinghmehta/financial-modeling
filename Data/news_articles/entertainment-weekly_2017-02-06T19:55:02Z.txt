@@ -1,0 +1,129 @@
+Copyright 2017 Time Inc. All rights reserved. Reproduction in whole or in part without permission is prohibited. The Bronx Zoo named two roaches after John Mulaney and Nick Kroll Madeline Raynor @madelineraynor_ Posted on February 6, 2017 at 2:55pm EST John Mulaney and Nick Kroll just got a pair of cockroaches named after them — and that s a good thing. Mulaney shared the news of their new cockroach namesakes on Twitter Monday, and here s how it happened: The Bronx Zoo named the pair of insects after Kroll and Mulaney in honor of the success of their Broadway play  Oh, Hello , in which they portray elderly bachelors Gil Faizon and George St. Geegland, respectively. The zoo s Name a Roach campaign gives people the opportunity to name a Madagascar hissing cockroach after someone for Valentine s Day. Like diamonds, cockroaches are forever — or almost  forever, given how long the resilient bugs tend to live. Your hissing cockroaches live in a hollowed out tree trunk inside the Madagascar!  exhibit, the zoo wrote in a note to the comedians. We hope you will plan a trip to visit them! The zoo has said the gesture can be sweet or an act of revenge, but in this case, it s clearly the former. Mulaney was charmed by the gesture, calling it, Genuinely moving, and Kroll retweeted Mulaney s first tweet in agreement. See the tweets below. Woke up to this letter. Thanks Wildlife Conservation Society and Bronx Zoo! No matter what happens @nickkroll and I will survive as Roaches. pic.twitter.com/nx4d7oSGi1 John Mulaney (@mulaney) February 6, 2017 On behalf of roaches and many other species, we are eternally grateful. Genuinely moving. https://t.co/eRSa5zZpST John Mulaney (@mulaney) February 6, 2017 If you want to make someone a Hissing Cockroach go to https://t.co/1j9lFIoC14 and #NameARoach or see like a witch doctor. https://t.co/eRSa5zZpST John Mulaney (@mulaney) February 6, 2017 Show Full Article Sponsored Stories Comments var preDrupalDisqusId = [],
+			disqusId = [],
+			disqus_config = function () {
+				if ( preDrupalDisqusId[0] ) {
+					this.page.identifier = preDrupalDisqusId[0];
+				} else if ( disqusId[0] ) {
+					this.page.identifier = disqusId[0];
+				} else {
+					this.page.identifier = '5570290';
+				}
+			};
+		(function() {
+			var d = document, s = d.createElement('script');
+				if ( disqusId[0] || document.location.hostname === 'ew.com' ) {
+					s.src = '//ewm.disqus.com/embed.js';
+				} else {
+					s.src = '//ewm-people-dev.disqus.com/embed.js';
+				}
+			s.setAttribute('data-timestamp', +new Date());
+			(d.head || d.body).appendChild(s);
+		})(); Please enable JavaScript to view the comments powered by Disqus. window.peopleAdMappings = window.peopleAdMappings || {}; peopleAdMappings['peopleAdfootercmad'] = {"collapse":true,"id":"peopleAdfootercmad","oop":false,"companion":false,"size":[248,86],"pos_group_name":"footer-cm-ad","sitename":"cm.enw","zone":"news","targeting":{"cmpos":["globalfooter"],"cmtyp":["tout"],"pos":1,"pos_group_name":"footer-cm-ad","adLoadMethod":"page"},"sizes":[[[1024,0],[[664,230]]],[[601,0],[[664,230]]],[[0,0],[[248,86]]]],"ad_name":"footer-cm-ad"};;
+					// Init defaults
+					window.time_dfp = window.time_dfp || [];
+					window.peopleAdMappings['_renderedAds'] = window.peopleAdMappings['_renderedAds'] || {};
+					window.time_dfp.push( function() { time_dfp.defineSlot(window.peopleAdMappings['peopleAdfootercmad'])});
+					if ( 'undefined' === typeof window.peopleAdMappings['footer-cm-ad'] || 'undefined' === typeof window.peopleAdMappings['footer-cm-ad']['default'] ) {
+						window.peopleAdMappings['footer-cm-ad'] = {};
+						// Remember, this is going to just be a reference not a copy.
+						window.peopleAdMappings['footer-cm-ad']['default'] = window.peopleAdMappings['peopleAdfootercmad'];
+					};
+					// Remember, this is going to just be a reference not a copy.
+					window.peopleAdMappings['footer-cm-ad']['peopleAdfootercmad'] = window.peopleAdMappings['peopleAdfootercmad'];
+					window.peopleAdMappings['_renderedAds']['peopleAdfootercmad'] = window.peopleAdMappings['peopleAdfootercmad'];
+					// POS Groups information. More from EW Chelsea Handler posts celebratory 'Trump impeachment' dance Chris Evans and more stars celebrate Patriots' Super Bowl win Lady Gaga, Katy Perry, more tweet excitement for Super Bowl Chelsea Peretti announces pregnancy: 'Beyonce schmonce' Here are the tweets Donald Trump wrote about Kristen Stewart See More Stories Most Popular 1 Chris Evans and more stars celebrate Patriots' Super Bowl win 2 Here are the tweets Donald Trump wrote about Kristen Stewart 3 J.K. Rowling mocks President Trump for 'negative polls' tweet 4 Chelsea Handler posts celebratory 'Trump impeachment' dance 5 Former President George H.W. Bush and Barbara appear at Super Bowl See Also Entertainment Weekly window.peopleAdMappings = window.peopleAdMappings || {}; peopleAdMappings['peopleAdsubscribelinkcmadfooter'] = {"collapse":true,"id":"peopleAdsubscribelinkcmadfooter","oop":false,"companion":false,"size":[94,13],"pos_group_name":"subscribe-link-cm-ad-footer","sitename":"cm.enw","zone":"news","targeting":{"cmtyp":["text"],"cmpos":["globalftrsublnk"],"pos":1,"pos_group_name":"subscribe-link-cm-ad-footer","adLoadMethod":"page"},"sizes":[[[1024,0],[[94,13]]],[[601,0],[[94,13]]],[[0,0],[[94,13]]]],"ad_name":"subscribe-link-cm-ad-footer"};;
+					// Init defaults
+					window.time_dfp = window.time_dfp || [];
+					window.peopleAdMappings['_renderedAds'] = window.peopleAdMappings['_renderedAds'] || {};
+					window.time_dfp.push( function() { time_dfp.defineSlot(window.peopleAdMappings['peopleAdsubscribelinkcmadfooter'])});
+					if ( 'undefined' === typeof window.peopleAdMappings['subscribe-link-cm-ad-footer'] || 'undefined' === typeof window.peopleAdMappings['subscribe-link-cm-ad-footer']['default'] ) {
+						window.peopleAdMappings['subscribe-link-cm-ad-footer'] = {};
+						// Remember, this is going to just be a reference not a copy.
+						window.peopleAdMappings['subscribe-link-cm-ad-footer']['default'] = window.peopleAdMappings['peopleAdsubscribelinkcmadfooter'];
+					};
+					// Remember, this is going to just be a reference not a copy.
+					window.peopleAdMappings['subscribe-link-cm-ad-footer']['peopleAdsubscribelinkcmadfooter'] = window.peopleAdMappings['peopleAdsubscribelinkcmadfooter'];
+					window.peopleAdMappings['_renderedAds']['peopleAdsubscribelinkcmadfooter'] = window.peopleAdMappings['peopleAdsubscribelinkcmadfooter'];
+					// POS Groups information. Facebook Tumblr Instagram Pinterest YouTube Google+ Copyright 2017 Time Inc. All rights reserved. Reproduction in whole or in part without permission is prohibited. window.peopleSettings = {"ads":{"lazyLoadClass":"ad-render-lazyload","adRenderedClass":"ad-rendered"}}; utag_data = {"author_name":"Madeline Raynor","channel":"ew","content_id":"5570290","friendly_url":"http:\/\/ew.com\/news\/2017\/02\/06\/john-mulaney-nick-kroll-cockroaches\/","is_logged_in":"no","page_name":"The Bronx Zoo named two roaches after John Mulaney and Nick Kroll","publish_date":"2017-02-06T14:55:02+00:00","site_section1":"News","tag_keywords":"john mulaney|nick kroll","template_type":"article","site_display_format":"mobile"}; utag_data = {"author_name":"Madeline Raynor","channel":"ew","content_id":"5570290","friendly_url":"http:\/\/ew.com\/news\/2017\/02\/06\/john-mulaney-nick-kroll-cockroaches\/","is_logged_in":"no","page_name":"The Bronx Zoo named two roaches after John Mulaney and Nick Kroll","publish_date":"2017-02-06T14:55:02+00:00","site_section1":"News","tag_keywords":"john mulaney|nick kroll","template_type":"article","site_display_format":"mobile"}; /* <![CDATA[ */
+var WPGroHo = {"my_hash":""};
+/* ]]> */ //initialize and attach hovercards to all gravatars
+		jQuery( document ).ready( function( $ ) {
+
+			if (typeof Gravatar === "undefined"){
+				return;
+			}
+
+			if ( typeof Gravatar.init !== "function" ) {
+				return;
+			}			
+
+			Gravatar.profile_cb = function( hash, id ) {
+				WPGroHo.syncProfileData( hash, id );
+			};
+			Gravatar.my_hash = WPGroHo.my_hash;
+			Gravatar.init( 'body', '#wp-admin-bar-my-account' );
+		}); window.WPCOM_sharing_counts = {"http:\/\/ew.com\/news\/2017\/02\/06\/john-mulaney-nick-kroll-cockroaches\/":5570290}; var windowOpen;
+		jQuery(document).on( 'ready post-load', function(){
+			jQuery( 'a.share-facebook' ).on( 'click', function() {
+				if ( 'undefined' !== typeof windowOpen ){ // If there's another sharing window open, close it.
+					windowOpen.close();
+				}
+				windowOpen = window.open( jQuery(this).attr( 'href' ), 'wpcomfacebook', 'menubar=1,resizable=1,width=600,height=400' );
+				return false;
+			});
+		}); var windowOpen;
+		jQuery(document).on( 'ready post-load', function(){
+			jQuery( 'a.share-twitter' ).on( 'click', function() {
+				if ( 'undefined' !== typeof windowOpen ){ // If there's another sharing window open, close it.
+					windowOpen.close();
+				}
+				windowOpen = window.open( jQuery(this).attr( 'href' ), 'wpcomtwitter', 'menubar=1,resizable=1,width=600,height=350' );
+				return false;
+			});
+		}); Send to Email Address Your Name Your Email Address document.getElementById('jetpack-source_f_name').value = ''; Cancel Post was not sent - check your email addresses! Email check failed, please try again Sorry, your blog cannot share posts by email. /* <![CDATA[ */
+var wpcomVipAnalytics = {"is_404":"0","is_home":"0","is_single":"1","is_front_page":"0","is_archive":"0","percentToTrack":"1"};
+/* ]]> */ /* <![CDATA[ */
+var sharing_js_options = {"lang":"en","counts":"1"};
+/* ]]> */ // <![CDATA[
+(function() {
+try{ if ( window.external &&'msIsSiteMode' in window.external) { if (window.external.msIsSiteMode()) { var jl = document.createElement('script'); jl.type='text/javascript'; jl.async=true; jl.src='/wp-content/plugins/ie-sitemode/custom-jumplist.php'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(jl, s); } }
+}catch(e){}
+})();
+// ]]> _tkq = window._tkq || [];
+_stq = window._stq || [];
+_tkq.push(['storeContext', {'blog_id':'120599047','blog_tz':'-5','user_lang':'en','blog_lang':'en','user_id':'0'}]);
+_stq.push(['view', {'blog':'120599047','v':'wpcom','tz':'-5','user_id':'0','post':'5570290','subd':'ewedit'}]);
+function st_vt() {var x=document.createElement("img");x.src="http://pixel.wp.com/g.gif?blog=120599047&v=wpcomvt&tz=-5&user_id=0&post=5570290&subd=ewedit&rand="+Math.random();}
+_stq.push(['extra', {'crypt':'UE40eW5QN0p8M2Y/RE1BNmNJfGhxNCVxUDExYmtXL3N3eUdPaVlpSiZBcDFWLiYydDBzWlNidl84K0N8d1JEUTRRLzcmNFhNcSZSfkZydm5nNWpFS1srT09+OVRxZ0V3fDIzRGNMbElSd2ttfnhham5STStXX3Y9S1t3UGhKZl85Q3x4eUc2R0Y1P3ZTenltcDl0OVt4fmQ5TTcuQnN8aHdSPWlYdH5CVkp4anBbUVtFejcyNTFoT01LVlQzYkJWS0RBbVRJa3k4b103SVhQbl82SnN8YkZOREVkVlkxdWtqY1BqXVdwcE5ITD1WUkhGWkc='}]);
+_stq.push([ 'clickTrackerInit', '120599047', '5570290' ]); if ( 'object' === typeof wpcom_mobile_user_agent_info ) {
+
+	wpcom_mobile_user_agent_info.init();
+	var mobileStatsQueryString = "";
+	
+	if( false !== wpcom_mobile_user_agent_info.matchedPlatformName )
+		mobileStatsQueryString += "&x_" + 'mobile_platforms' + '=' + wpcom_mobile_user_agent_info.matchedPlatformName;
+	
+	if( false !== wpcom_mobile_user_agent_info.matchedUserAgentName )
+		mobileStatsQueryString += "&x_" + 'mobile_devices' + '=' + wpcom_mobile_user_agent_info.matchedUserAgentName;
+	
+	if( wpcom_mobile_user_agent_info.isIPad() )
+		mobileStatsQueryString += "&x_" + 'ipad_views' + '=' + 'views';
+
+	if( "" != mobileStatsQueryString ) {
+		new Image().src = document.location.protocol + '//pixel.wp.com/g.gif?v=wpcom-no-pv' + mobileStatsQueryString + '&baba=' + Math.random();
+	}
+	
+} window.peopleAdMappings = window.peopleAdMappings || {}; peopleAdMappings['peopleAd1x6'] = {"collapse":true,"id":"peopleAd1x6","oop":false,"companion":false,"size":[1,6],"pos_group_name":"1x6","zone":"news","sizes":[[[1024,0],[[1,6]]],[[601,0],[[1,6]]]],"ad_name":"1x6","targeting":{"pos":1,"pos_group_name":"1x6","adLoadMethod":"page"}};;
+					// Init defaults
+					window.time_dfp = window.time_dfp || [];
+					window.peopleAdMappings['_renderedAds'] = window.peopleAdMappings['_renderedAds'] || {};
+					window.time_dfp.push( function() { time_dfp.defineSlot(window.peopleAdMappings['peopleAd1x6'])});
+					if ( 'undefined' === typeof window.peopleAdMappings['1x6'] || 'undefined' === typeof window.peopleAdMappings['1x6']['default'] ) {
+						window.peopleAdMappings['1x6'] = {};
+						// Remember, this is going to just be a reference not a copy.
+						window.peopleAdMappings['1x6']['default'] = window.peopleAdMappings['peopleAd1x6'];
+					};
+					// Remember, this is going to just be a reference not a copy.
+					window.peopleAdMappings['1x6']['peopleAd1x6'] = window.peopleAdMappings['peopleAd1x6'];
+					window.peopleAdMappings['_renderedAds']['peopleAd1x6'] = window.peopleAdMappings['peopleAd1x6'];
+					// POS Groups information.

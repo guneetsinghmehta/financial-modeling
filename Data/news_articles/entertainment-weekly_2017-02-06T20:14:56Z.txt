@@ -1,0 +1,103 @@
+Copyright 2017 Time Inc. All rights reserved. Reproduction in whole or in part without permission is prohibited. Lady Gaga at the Super Bowl: Leaps, lights, and low-key politics Marc Snetiker @MarcSnetiker Updated February 6, 2017 at 3:14pm EST Are there any expectations left for Lady Gaga? In her decade-long career, the singer has covered territory from globally perplexing bauble to nascent thespian to stripped-down soulstress, on a journey marked and mired by hits and misses across the board discography, feuds, whatever you want to call the meat dress debacle. She’s set, met, and broken expectations for years so what exactly was the onus on her ROI heading into Super Bowl LI? Something a noticeable portion of commercials this year chose to do: wax political. In the weeks leading up to Gaga’s turn as halftime headliner, the conversation surrounding the artist seemed to shift from informed suspicion to brazen hope that she would create a buzzy, unscripted, politically-charged Super Bowl moment. As an outspoken opponent of Donald Trump prior to and following the election, Gaga seemed primed for an opportunity to bring her equality-focused POV to a rare national platform—arguably the rarest, most undiluted exposure a mainstream artist could ever get to an audience of momentarily blurred demographics. ( function() {
+			var func = function() {
+				var iframe_form = document.getElementById('wpcom-iframe-form-9f0ebf56c3cb8b58049c029b9c068ec9-5898f3b552d66');
+				var iframe = document.getElementById('wpcom-iframe-9f0ebf56c3cb8b58049c029b9c068ec9-5898f3b552d66');
+				if ( iframe_form && iframe ) {
+					iframe_form.submit();
+					iframe.onload = function() {
+						iframe.contentWindow.postMessage( {
+							'msg_type': 'poll_size',
+							'frame_id': 'wpcom-iframe-9f0ebf56c3cb8b58049c029b9c068ec9-5898f3b552d66'
+						}, window.location.protocol + '//wpcomwidgets.com' );
+					}
+				}
+
+				// Autosize iframe
+				var funcSizeResponse = function( e ) {
+					var origin = document.createElement( 'a' );
+					origin.href = e.origin;
+
+					// Verify message origin
+					if ( 'wpcomwidgets.com' !== origin.host )
+						return;
+
+					// Verify message is in a format we expect
+					if ( 'object' !== typeof e.data || undefined === e.data.msg_type )
+						return;
+
+					switch ( e.data.msg_type ) {
+						case 'poll_size:response':
+							var iframe = document.getElementById( e.data._request.frame_id );
+
+							if ( iframe && '' === iframe.width )
+								iframe.width = '100%';
+							if ( iframe && '' === iframe.height )
+								iframe.height = parseInt( e.data.height );
+
+							return;
+						default:
+							return;
+					}
+				}
+
+				if ( 'function' === typeof window.addEventListener ) {
+					window.addEventListener( 'message', funcSizeResponse, false );
+				} else if ( 'function' === typeof window.attachEvent ) {
+					window.attachEvent( 'onmessage', funcSizeResponse );
+				}
+			}
+			if (document.readyState === 'complete') { func.apply(); /* compat for infinite scroll */ }
+			else if ( document.addEventListener ) { document.addEventListener( 'DOMContentLoaded', func, false ); }
+			else if ( document.attachEvent ) { document.attachEvent( 'onreadystatechange', func ); }
+		} )(); And yet, Gaga didn’t unfurl a banner or rip off a costume to bear some bold-faced message about the injustice du jour. For some, that’s a let-down. For others, a miracle. For Gaga, it’s neither, because the very nature of the singer’s entire career has been one major call to progress. If her Super Bowl performance felt like classically eccentric and electric Gaga, her advocacy should have been felt as well. When Gaga took the stage or, not so much took it as descended upon it with the air-raid intensity of Mary Martin shooting a Mad Max cameo one of the centerpiece songs was her 2011 game-changer, “Born This Way.” She echoed the refrain that helped a million teens heal half a decade ago: “No matter gay, straight or bi/ Lesbian, transgender life/ I m on the right track, baby/ I was born to survive.” Almost six years old exactly, the anthem’s message is still necessary and, to a certain portion of Super Bowl viewers, no less challenging to long-standing dogmas that have risen back into national question lately. The song is a protest, ever now as before, and its familiarity shouldn’t dull its empowering luster. ( function() {
+			var func = function() {
+				var iframe_form = document.getElementById('wpcom-iframe-form-508663b46698bb751b5c2b0707a36f09-5898f3b552fba');
+				var iframe = document.getElementById('wpcom-iframe-508663b46698bb751b5c2b0707a36f09-5898f3b552fba');
+				if ( iframe_form && iframe ) {
+					iframe_form.submit();
+					iframe.onload = function() {
+						iframe.contentWindow.postMessage( {
+							'msg_type': 'poll_size',
+							'frame_id': 'wpcom-iframe-508663b46698bb751b5c2b0707a36f09-5898f3b552fba'
+						}, window.location.protocol + '//wpcomwidgets.com' );
+					}
+				}
+
+				// Autosize iframe
+				var funcSizeResponse = function( e ) {
+					var origin = document.createElement( 'a' );
+					origin.href = e.origin;
+
+					// Verify message origin
+					if ( 'wpcomwidgets.com' !== origin.host )
+						return;
+
+					// Verify message is in a format we expect
+					if ( 'object' !== typeof e.data || undefined === e.data.msg_type )
+						return;
+
+					switch ( e.data.msg_type ) {
+						case 'poll_size:response':
+							var iframe = document.getElementById( e.data._request.frame_id );
+
+							if ( iframe && '' === iframe.width )
+								iframe.width = '100%';
+							if ( iframe && '' === iframe.height )
+								iframe.height = parseInt( e.data.height );
+
+							return;
+						default:
+							return;
+					}
+				}
+
+				if ( 'function' === typeof window.addEventListener ) {
+					window.addEventListener( 'message', funcSizeResponse, false );
+				} else if ( 'function' === typeof window.attachEvent ) {
+					window.attachEvent( 'onmessage', funcSizeResponse );
+				}
+			}
+			if (document.readyState === 'complete') { func.apply(); /* compat for infinite scroll */ }
+			else if ( document.addEventListener ) { document.addEventListener( 'DOMContentLoaded', func, false ); }
+			else if ( document.attachEvent ) { document.attachEvent( 'onreadystatechange', func ); }
+		} )(); And that’s where Gaga’s set, and the conversation of expectations about her performance , comes in. Should we be surprised by her lack of an unscripted departure for the sake of democracy? Realistically, no. Gaga divulged last week that she wasn’t planning a political stunt; if her comments didn’t mark a definitive end to speculation, the fault is not on her. But consider another remark she made at a Super Bowl press conference over the weekend: “The only statements that I’ll be making during the halftime show are the ones that I ve been consistently making throughout my career.” Shouldn’t we be so lucky? RELATED: Super Bowl Performers Don t Get Paid, So Why Do It? If Gaga has devoted a measure of her career to standing up for marginalized groups beset by hate, her decision to not turn Super Bowl LI into a headline-making stunt should not erase the work of her previous visible activism (and certainly not in an epoch when other artists in her echelon are cravenly opting to remain silent). But what s more is that Gaga did get political, because she is inherently political. Gaga didn’t have to layer her half-time show with “God Bless America,” a reclamation of the national emblem that’s been co-opted as of late, or “This Land Is Your Land,” construed by some as the ultimate in executive subversion. Her mission as a musician has always been progressively-charged; it’s only the call of an increasingly helpless nation that’s now decided to push her for more of it. An opportunity for insurgency on a mass scale was missed, but the Super Bowl can not have been for naught if Gaga s message about inclusivity and the superheroics of self-acceptance reached a handful of new audience members who missed it in its first go-round—or who, simply, needed to hear it again. Copyright 2017 Time Inc. All rights reserved. Reproduction in whole or in part without permission is prohibited.
