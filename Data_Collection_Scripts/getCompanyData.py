@@ -15,16 +15,12 @@ import os
 #username = '7173f71ee9d7a0db67ab15aa149ab6c9'
 #password = 'e7baf09b41c222b9ccdbbb99f5fb1e23'
 
-#username = 'd30ad4040b16f8f390682f623ed8ab92'
-#password = '79be5cf07afffc316be02e4bc7609fe4'
-
-#username = 'd30ad4040b16f8f390682f623ed8ab92'
-#password = '79be5cf07afffc316be02e4bc7609fe4'
-
+username = 'd30ad4040b16f8f390682f623ed8ab92'
+password = '79be5cf07afffc316be02e4bc7609fe4'
 
 # Credentials - Neha
-username = '140880a8f82720ec4c79184d48569637'
-password = '5cc95d190174dca7166f566994a9d3c6'
+#username = '140880a8f82720ec4c79184d48569637'
+#password = '5cc95d190174dca7166f566994a9d3c6'
 
 # URLS
 url_dict = {
