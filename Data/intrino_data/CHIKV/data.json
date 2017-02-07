@@ -1,0 +1,1 @@
+{"prices": {"current_page": 1, "total_pages": 1, "page_size": 50000, "api_call_credits": 1, "data": [{"ex_dividend": 0.0, "volume": 1820875.0, "adj_low": 12.02, "adj_open": 12.02, "adj_close": 13.74, "high": 15.0, "adj_volume": 1820875.0, "low": 12.02, "date": "2016-07-22", "close": 13.74, "open": 12.02, "adj_high": 15.0, "split_ratio": 1.0}], "result_count": 1}}
