@@ -11,17 +11,26 @@ import re
 import os
 
 # import getTickers
+#Credentials Nivetha
+#username='ae313cbca74f3627635679011fd64d7a'
+#password='a0cb0a107245feb909da875cf2e45779'
+
 # Credentials - Guneet
 #username = '7173f71ee9d7a0db67ab15aa149ab6c9'
 #password = 'e7baf09b41c222b9ccdbbb99f5fb1e23'
 
-username = 'd30ad4040b16f8f390682f623ed8ab92'
-password = '79be5cf07afffc316be02e4bc7609fe4'
+#username = 'd30ad4040b16f8f390682f623ed8ab92'
+#password = '79be5cf07afffc316be02e4bc7609fe4'
 
 # Credentials - Neha
 #username = '140880a8f82720ec4c79184d48569637'
 #password = '5cc95d190174dca7166f566994a9d3c6'
 
+username_list=['ae313cbca74f3627635679011fd64d7a','7173f71ee9d7a0db67ab15aa149ab6c9','d30ad4040b16f8f390682f623ed8ab92','140880a8f82720ec4c79184d48569637']
+password_list=['a0cb0a107245feb909da875cf2e45779','e7baf09b41c222b9ccdbbb99f5fb1e23','79be5cf07afffc316be02e4bc7609fe4','5cc95d190174dca7166f566994a9d3c6']
+
+username=''
+password=''
 # URLS
 url_dict = {
 'prices': 'https://api.intrinio.com/prices?ticker='}
@@ -104,11 +113,18 @@ def get_company_data(ticker, saveBoolean):
     print(ticker+"done")        
 
 def runAll():
-    fileHandle=open('tickerList.txt','r')
+    fileHandle=open('tickerListIntrino.txt','r')
+    count=1
     for line in fileHandle:
+        index=count/540
+        if index>=len(username_list):
+            break;
+        username=username_list[index];
+        password=password_list[index];
         ticker=line.strip()
         get_company_data(ticker,False)
-        print(ticker)
-
+        print(ticker+" "+str(count)+" "+str(index))
+        count=count+1
+    
 runAll()
    

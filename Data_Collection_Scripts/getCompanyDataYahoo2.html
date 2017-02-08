@@ -1,0 +1,82 @@
+<pre>'''
+</pre>
+<pre>Created on Feb 7, 2017
+</pre>
+<pre>
+</pre>
+<pre>@author: zeus
+</pre>
+<pre>'''
+</pre>
+<pre>#https://pypi.python.org/pypi/yahoo-finance
+</pre>
+<pre>from yahoo_finance import Share
+</pre>
+<pre>import time
+</pre>
+<pre>import os
+</pre>
+<pre>import json
+</pre>
+<pre>
+</pre>
+<pre>def getCompanyDataYahoo(ticker):
+</pre>
+<pre>    start_date_list=['2007-1-1','2012-1-1','2014-1-1','2015-1-1','2016-1-1','2017-1-1']
+</pre>
+<pre>    end_date='2017-2-2'
+</pre>
+<pre>    newpath = '../Data/yahoo_data_2/' + ticker
+</pre>
+<pre>    for start_date in start_date_list:
+</pre>
+<pre>        try:                
+</pre>
+<pre>            company=Share(ticker)
+</pre>
+<pre>            historical_data=company.get_historical(start_date,end_date)
+</pre>
+<pre>            if not os.path.exists(newpath):
+</pre>
+<pre>                os.makedirs(newpath)
+</pre>
+<pre>            fileHandle = open(newpath + '/data.json', 'wb')
+</pre>
+<pre>            json.dump(historical_data, fileHandle)
+</pre>
+<pre>            fileHandle.close()
+</pre>
+<pre>            print ticker+" found"
+</pre>
+<pre>            return
+</pre>
+<pre>        except Exception as error:
+</pre>
+<pre>            pass
+</pre>
+<pre>            #print  ticker+" NOT found"
+</pre>
+<pre>            #print  error
+</pre>
+<pre>    print  ticker+" NOT found"
+</pre>
+<pre>    
+</pre>
+<pre>def runAll():
+</pre>
+<pre>    #fileHandle=open('tickerList.txt','r')#contains list from Intrino
+</pre>
+<pre>    fileHandle=open('NASDAQNYSEYahooFinanceTickers.txt','r')# contains 3200 list of companies from
+</pre>
+<pre>    for line in fileHandle:
+</pre>
+<pre>        ticker=line.strip()
+</pre>
+<pre>        getCompanyDataYahoo(ticker)
+</pre>
+<pre>        #print(ticker)
+</pre>
+<pre>runAll()
+</pre>
+<pre>   
+</pre>

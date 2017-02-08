@@ -27,7 +27,8 @@ def getCompanyDataYahoo(ticker):
         print  error
     
 def runAll():
-    fileHandle=open('tickerList2.txt','r')
+    fileHandle=open('tickerList.txt','r')#contains list from Intrino
+    #fileHandle=open('tickerListYahoo.txt','r')# contains 3200 list of companies from
     for line in fileHandle:
         ticker=line.strip()
         getCompanyDataYahoo(ticker)
