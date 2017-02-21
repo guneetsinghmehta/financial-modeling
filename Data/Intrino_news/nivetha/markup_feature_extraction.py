@@ -32,8 +32,8 @@ class FeatureExtractorForCompany:
     def check_first_letters_capital(self, name):
         for word in name.split(' '):
             if len(word.strip()) != 0 and word[0].isalpha() and not word[0].isupper():
-                return True
-        return False
+                return False
+        return True
 
     # Check if digit is present in name
     def digit_present_in_name(self, name):
@@ -57,14 +57,14 @@ class FeatureExtractorForCompany:
         name = name.strip()
         name_lower = name.lower()
         self.company = dict()
-        self.company['company_name'] = name
+        # self.company['company_name'] = name
         self.company['indicators_present'] = 1 if self.contains_relevant_indicators(name_lower) else 0
-        self.company['previous_indicator_occurence'] = self.count_previous_relevant_indicators()
+        # self.company['previous_indicator_occurence'] = self.count_previous_relevant_indicators()
         self.company['index_present'] = 1 if self.contains_index_indicators(name_lower) else 0
         self.company['capitalized_words'] = 1 if self.check_first_letters_capital(name) else 0
         self.company['digits_present'] = 1 if self.digit_present_in_name(name_lower) else 0
-        self.company['symbols_present'] = 1 if self.contains_special_symbols(name_lower) else 0
-        self.company['name_length'] = 1 if self.word_count(name_lower) <= 4 else 0
+        self.company['special_symbols_present'] = 1 if self.contains_special_symbols(name_lower) else 0
+        self.company['name_length'] = self.word_count(name_lower)
         return self.company
 
 if __name__ == "__main__":
