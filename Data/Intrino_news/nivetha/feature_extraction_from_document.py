@@ -2,6 +2,7 @@ from __future__ import print_function
 from HTMLParser import HTMLParser
 import os
 from markup_feature_extraction import FeatureExtractorForCompany
+from get_tuple_format_for_negative_data import NegativeExampleExtractor
 
 class DocumentFeatureExtractor(HTMLParser):
     def __init__(self):
@@ -39,21 +40,41 @@ class DocumentFeatureExtractor(HTMLParser):
         return str_of_interest.find("</strong>") != -1
 
     def handle_data(self, data):
+        data = data.strip()
         if self.company_name_started:
-            data = data.strip()
             self.comapanies_occurred += 1
             company = self.feature_extractor.get_dictionary(data)
             company['first_word'] = 1 if self.check_first_word() else 0
-            company['previous_indicator_occurence'] = 1 if self.previous_indicators_occurred() else 0
+            # company['previous_indicator_occurence'] = 1 if self.previous_indicators_occurred() else 0
             company['starting_position'] = len(self.document)
             company['ending_position'] = len(self.document) + len(data)
+            company['class'] = 1
+            company['name'] = data
             if not self.company_occurence.has_key(data.lower()):
                 self.company_occurence[data.lower()] = 1
             else:
                 self.company_occurence[data.lower()] += 1
             # self.company_occurence[data] = self.company_occurence[data] + 1 if not self.company_occurence.has_key(data) else 1
-            self.company_col[len(self.document)] = (data, company)
+            self.company_col[(company['starting_position'], company['ending_position'])] = (data, company)
             # self.document += data
+        else:
+            # Processing negative examples
+            # print("Negative examples: ", data)
+            company_combinations = NegativeExampleExtractor.get_negative_markers(data, len(self.document), len(self.document.split(' ')))
+            for company_dict in company_combinations:
+                # print("The list is: ", company_dict['curr_list'])
+                company_name = " ".join(company_dict['curr_list'])
+                company = self.feature_extractor.get_dictionary(company_name)
+                company['first_word'] = 1 if self.check_first_word() else 0
+                company['starting_position'] = company_dict['starting_position']
+                company['ending_position'] = company_dict['ending_position']
+                company['name'] = company_name
+                company['class'] = 0
+                if not self.company_occurence.has_key(company_name.lower()):
+                    self.company_occurence[company_name.lower()] = 1
+                else:
+                    self.company_occurence[company_name.lower()] += 1
+                self.company_col[(company['starting_position'], company['ending_position'])] = (company_name, company)
         self.document += data
         self.document_with_tags += data
 

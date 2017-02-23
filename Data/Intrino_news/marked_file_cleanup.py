@@ -18,6 +18,9 @@ class MyHTMLParser(HTMLParser):
         # print("Encountered some data: ", data)
         self.string = self.string + data
 
+    def clean_space_in_data(self):
+        self.string = " ".join([x for x in self.string.split(' ') if len(x) > 0])
+
 def clean_files(folder_name):
     parser = MyHTMLParser()
     files = os.listdir(folder_name)
@@ -28,10 +31,11 @@ def clean_files(folder_name):
             lines = "".join(lines)
             parser.feed(lines)
             # print(parser.string)
+        parser.clean_space_in_data()
         with open(os.path.join(folder_name, file_name), "w") as f:
             print(parser.string, file=f)
 
 if __name__ == "__main__":
     # parser.feed('adflkj <br/><p>This is a <strong>akdjf</strong></p>')
     # print parser.string
-    clean_files("neha/done_files1")
+    clean_files("nivetha/done_files1")
