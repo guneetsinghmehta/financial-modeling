@@ -3,6 +3,7 @@ from HTMLParser import HTMLParser
 import os
 from markup_feature_extraction import FeatureExtractorForCompany
 from get_tuple_format_for_negative_data import NegativeExampleExtractor
+import json
 
 class DocumentFeatureExtractor(HTMLParser):
     def __init__(self):
@@ -79,11 +80,13 @@ class DocumentFeatureExtractor(HTMLParser):
         self.document_with_tags += data
 
     def final_wraps(self, file_obj, file_name):
+        companies = []
         for key,value in self.company_col.items():
             company_name, company = value
             company['occurence_count'] = self.company_occurence[company_name.lower()]
             company['document'] = file_name
-            print(company, file=file_obj)
+            companies.append(company)
+        json.dump({'companies': companies}, file_obj)
 
 def get_dictionary_in_all_documents(source, destination):
     if not os.path.exists(source) or not os.path.isdir(source):
