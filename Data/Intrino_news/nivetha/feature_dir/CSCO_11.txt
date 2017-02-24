@@ -1,0 +1,2 @@
+{'special_symbols_present': 0, 'occurence_count': 1, 'name_length': 3, 'index_present': 0, 'starting_position': 78, 'previous_indicator_occurence': 1, 'digits_present': 0, 'capitalized_words': 0, 'ending_position': 92, 'document': 'CSCO_11.txt', 'indicators_present': 0, 'first_word': 0}
+{'special_symbols_present': 0, 'occurence_count': 1, 'name_length': 1, 'index_present': 0, 'starting_position': 70, 'previous_indicator_occurence': 0, 'digits_present': 0, 'capitalized_words': 1, 'ending_position': 75, 'document': 'CSCO_11.txt', 'indicators_present': 0, 'first_word': 0}

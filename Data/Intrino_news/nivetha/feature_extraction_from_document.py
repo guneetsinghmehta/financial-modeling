@@ -105,10 +105,12 @@ def get_dictionary_in_all_documents(source, destination):
             source_file.close()
             dest_file.close()
         except:
-            print("Exception occurred while trying to parse: " + file_name)
-        break
+            print("Exception occurred while trying to parse: " + source +file_name)
+        #break
 
 
 
 if __name__ == "__main__":
-    get_dictionary_in_all_documents("done_files1", "dictionary_files")
+    get_dictionary_in_all_documents("done_files1", "dict_files")
+    get_dictionary_in_all_documents("../neha/done_files1", "dict_files")
+    get_dictionary_in_all_documents("../Marked_files", "dict_files")

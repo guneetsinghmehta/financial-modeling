@@ -1,5 +1,11 @@
 from __future__ import print_function
 import json, os
+from sklearn import datasets
+from sklearn import svm
+from time import sleep
+import numpy as np
+from sklearn.model_selection import KFold, cross_val_score
+from sklearn.metrics import precision_recall_fscore_support
 
 class TrainFile():
   def __init__(self):
@@ -39,10 +45,18 @@ class TrainFile():
 
 if __name__ == "__main__":
   file_trainer = TrainFile()
-  file_trainer.generate_training_data_for_folder('dictionary_files')
+  file_trainer.generate_training_data_for_folder('dict_files')
   a = file_trainer.get_vector_and_classes()
   print("Vectors")
-  print(a[0])
+  #print(a[0])
+  x= np.array(a[0])
   print("Classes")
-  print(a[1])
+  #print(a[1])
+  y = np.array(a[1])
+  classifier=svm.SVC(gamma=0.001,C=100.0)
+  k_fold = KFold(n_splits=4)
+  for train, test in k_fold.split(x):
+	y_pred = (classifier.fit(x[train], y[train])).predict(x[test])
+	val = precision_recall_fscore_support(y[test], y_pred, average='macro')
+	print(val)
   

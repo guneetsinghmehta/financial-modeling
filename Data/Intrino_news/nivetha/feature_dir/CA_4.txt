@@ -1,0 +1,2 @@
+{'special_symbols_present': 0, 'occurence_count': 2, 'name_length': 2, 'index_present': 0, 'starting_position': 0, 'previous_indicator_occurence': 0, 'digits_present': 0, 'capitalized_words': 1, 'ending_position': 15, 'document': 'CA_4.txt', 'indicators_present': 0, 'first_word': 1}
+{'special_symbols_present': 0, 'occurence_count': 2, 'name_length': 2, 'index_present': 0, 'starting_position': 1785, 'previous_indicator_occurence': 0, 'digits_present': 0, 'capitalized_words': 1, 'ending_position': 1800, 'document': 'CA_4.txt', 'indicators_present': 0, 'first_word': 1}
