@@ -6,6 +6,11 @@ from time import sleep
 import numpy as np
 from sklearn.model_selection import KFold, cross_val_score
 from sklearn.metrics import precision_recall_fscore_support
+from sklearn.tree import DecisionTreeClassifier
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.linear_model import LogisticRegression
+from sklearn.model_selection import LeaveOneOut
+from sklearn.metrics import classification_report
 
 class TrainFile():
   def __init__(self):
@@ -45,18 +50,78 @@ class TrainFile():
 
 if __name__ == "__main__":
   file_trainer = TrainFile()
-  file_trainer.generate_training_data_for_folder('dict_files')
+  file_trainer.generate_training_data_for_folder('new_dict_files')
   a = file_trainer.get_vector_and_classes()
-  print("Vectors")
   #print(a[0])
   x= np.array(a[0])
-  print("Classes")
   #print(a[1])
+  count_1 = sum(a[1])
+  print("Count 0: " + str(len(a[1])-count_1) + " Count 1 : " + str(count_1))
   y = np.array(a[1])
-  classifier=svm.SVC(gamma=0.001,C=100.0)
-  k_fold = KFold(n_splits=4)
-  for train, test in k_fold.split(x):
-	y_pred = (classifier.fit(x[train], y[train])).predict(x[test])
-	val = precision_recall_fscore_support(y[test], y_pred, average='macro')
-	print(val)
+  svmr_classifier=svm.SVC(gamma=0.001,C=100.0, kernel = 'rbf')
+  svml_classifier=svm.SVC(gamma=0.001,C=100.0, kernel = 'linear')
+  svmp_classifier=svm.SVC(gamma=0.001,C=100.0, kernel = 'poly')
+  svms_classifier=svm.SVC(gamma=0.001,C=100.0, kernel = 'sigmoid')
+  dt_classifier = DecisionTreeClassifier(max_depth=None, min_samples_split=2,random_state=0)
+  rf_classifier = RandomForestClassifier(n_estimators=10, max_depth=None,min_samples_split=2, random_state=0)
+  logreg_classifier = LogisticRegression(C=1e5)
   
+  k_fold = KFold(n_splits=4)
+  #precision, recall = 0,0
+  #for train, test in k_fold.split(x):
+  #      y_pred = (svmr_classifier.fit(x[train], y[train])).predict(x[test])
+  #      val = precision_recall_fscore_support(y[test], y_pred, average='macro')
+  #      print(val)
+  #      precision, recall = precision + val[0], recall + val[1]
+  #print("SVMR Classifier: ", precision/10, recall/10)
+
+  #precision, recall = 0,0
+  #for train, test in k_fold.split(x):
+  #      y_pred = (svml_classifier.fit(x[train], y[train])).predict(x[test])
+  #      val = precision_recall_fscore_support(y[test], y_pred, average='macro')
+  #      print(val)
+  #      precision, recall = precision + val[0], recall + val[1]
+  #print("SVML Classifier: ",precision/10, recall/10)
+  #
+  #precision, recall = 0,0
+  #for train, test in k_fold.split(x):
+  #      y_pred = (svmp_classifier.fit(x[train], y[train])).predict(x[test])
+  #      val = precision_recall_fscore_support(y[test], y_pred, average='macro')
+  #      print(val)
+  #      precision, recall = precision + val[0], recall + val[1]
+  #print("SVMP Classifier: ",precision/10, recall/10)
+
+  #precision, recall = 0,0
+  #for train, test in k_fold.split(x):
+  #      y_pred = (svms_classifier.fit(x[train], y[train])).predict(x[test])
+  #      val = precision_recall_fscore_support(y[test], y_pred, average='macro')
+  #      print(val)
+  #      precision, recall = precision + val[0], recall + val[1]
+  #print("SVMS Classifier: ",precision/10, recall/10)
+
+  precision, recall = 0,0
+  for train, test in k_fold.split(x):
+        y_pred = (dt_classifier.fit(x[train], y[train])).predict(x[test])
+        val = precision_recall_fscore_support(y[test], y_pred, average='macro')
+        print(val)
+        precision, recall = precision + val[0], recall + val[1]
+  print("DT Classifier: ",precision/4, recall/4)
+
+  precision, recall = 0,0
+  for train, test in k_fold.split(x):
+        y_pred = (rf_classifier.fit(x[train], y[train])).predict(x[test])
+        val = precision_recall_fscore_support(y[test], y_pred, average='macro')
+        print(val)
+        precision, recall = precision + val[0], recall + val[1]
+  print("RF Classifier: ",precision/4, recall/4)
+
+  precision, recall = 0,0
+  for train, test in k_fold.split(x):
+        y_pred = (logreg_classifier.fit(x[train], y[train])).predict(x[test])
+        val = precision_recall_fscore_support(y[test], y_pred, average='macro')
+	#print(classification_report(y[test], y_pred))
+        print(val)
+	precision, recall = precision + val[0], recall + val[1]
+  print("LOG REG Classifier: ",precision/4, recall/4)
+
+ 

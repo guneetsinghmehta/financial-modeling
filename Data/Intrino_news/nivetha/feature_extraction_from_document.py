@@ -42,6 +42,10 @@ class DocumentFeatureExtractor(HTMLParser):
 
     def handle_data(self, data):
         data = data.strip()
+	if len(data) == 0:
+	    self.document += data
+	    self.document_with_tags += data
+	    return
         if self.company_name_started:
             self.comapanies_occurred += 1
             company = self.feature_extractor.get_dictionary(data)
@@ -61,7 +65,12 @@ class DocumentFeatureExtractor(HTMLParser):
         else:
             # Processing negative examples
             # print("Negative examples: ", data)
+	    # print("The data is: ")
+	    # print("|"+ data + "|")
             company_combinations = NegativeExampleExtractor.get_negative_markers(data, len(self.document), len(self.document.split(' ')))
+	    # print("The company combinations is : ", company_combinations)
+	    # print("The data is: ")
+	    # print(data)
             for company_dict in company_combinations:
                 # print("The list is: ", company_dict['curr_list'])
                 company_name = " ".join(company_dict['curr_list'])
@@ -96,7 +105,9 @@ def get_dictionary_in_all_documents(source, destination):
         os.makedirs(destination)
     files = [x for x in os.listdir(source) if os.path.isfile(os.path.join(source,x))]
     for file_name in files:
-        try:
+    #file_name = "AAPL_0.txt"
+    #if file_name != None:
+	try:
             source_file = open(os.path.join(source, file_name), "r")
             dest_file = open(os.path.join(destination, file_name), "w")
             parser = DocumentFeatureExtractor()
@@ -111,6 +122,6 @@ def get_dictionary_in_all_documents(source, destination):
 
 
 if __name__ == "__main__":
-    get_dictionary_in_all_documents("done_files1", "dict_files")
-    get_dictionary_in_all_documents("../neha/done_files1", "dict_files")
-    get_dictionary_in_all_documents("../Marked_files", "dict_files")
+    #get_dictionary_in_all_documents("done_files1", "new_dict_files")
+    get_dictionary_in_all_documents("../neha/done_files1", "new_dict_files")
+    get_dictionary_in_all_documents("../Marked_files", "new_dict_files")
