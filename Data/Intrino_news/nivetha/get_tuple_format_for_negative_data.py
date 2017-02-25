@@ -11,12 +11,13 @@ class NegativeExampleExtractor():
         word_list_to_process = False
         negative_markers = []
         no_of_words_processed = words_processed
+        filter_list = NegativeExampleExtractor.get_filter_word_list()
         for words in sentence_parts:
 	    # print("Word: ", words)
 	    # print("Length: ", len(words))
-	    if len(words) == 0:
-		continue
-            if words[0].isupper():
+            if len(words) == 0:
+                continue
+            if words[0].isupper() and not NegativeExampleExtractor.should_filter(words, filter_list):
                 continuous_word_list.append(words)
                 word_list_to_process = True
             else:
@@ -31,6 +32,33 @@ class NegativeExampleExtractor():
         if word_list_to_process:
             negative_markers.extend(NegativeExampleExtractor.process_word_list(continuous_word_list, word_lens, no_of_words_processed))
         return negative_markers
+
+    @staticmethod
+    def should_filter(words, filter_list):
+        return False
+        # should filter the words present in the filter list
+        if words.lower().strip() in filter_list:
+            return True
+        # return False
+        # remove if the word length is less than 3
+        if len(words.strip()) < 4:
+            return True
+        # return False
+        # # remove if the words are all caps
+        for letter in words:
+            if letter.isalpha() and letter.islower():
+                return False
+        return True
+
+    @staticmethod
+    def get_filter_word_list():
+        filter_list = None
+        with open("filter_list.txt", "r") as f:
+            lines = f.readlines()
+            lines = ",".join(lines)
+            filter_list = [ x.strip().lower() for x in lines.split(',') if len(x.strip()) > 0 ]
+        # print filter_list
+        return filter_list
 
     @staticmethod
     def process_word_list(word_list, word_lens, no_of_words_processed):
@@ -89,5 +117,5 @@ if __name__ == "__main__":
     # print NegativeExampleExtractor.get_combinations(words, 0, 0)
     # print NegativeExampleExtractor.get_combinations_end(words, 0, 0)
     # print NegativeExampleExtractor.process_word_list(words, 0, 0)
-    data = "XPS 13, and so on. Really honking laptops, like the 15-inch MacBook Pro, expect more wattage (85). This charger will work on those machinesjust not as fast. How do I love this thing? Let us count the ways. I keep one laptop charger my laptop bag, and one plugged in by the couch. So Ive been through the mill, trying to find just the right charging cord to be my spare. Since USB-C means that Im no longer locked into Apples proprietary chargers, Ive experimented with a Dell ($27, 30 watts) and a Udoli ($35, 45 watts), shown below. I knew both would take longer to charge than my MacBook Pros original charger (61 watts), but that didnt really matter for hotel-room purposes; theyd have overnight to charge. What I found, though, was that the Dell makes my laptop chime every few seconds, as though the cord is being unplugged and replugged. (Its probably not to spec, a buddy of mine guessesa hazard of the new, open USB-C world.) The Udoli works fine as long as the laptop is open  but when closed, it occasionally does that same chime. (I asked Anthony Sagneri, chief technology officer of FINsix, the Darts maker, about this chiming business. His suspicion: The Intel chipsets inside most laptops can draw large peak currents for short periods. But if the charger isnt designed for those surges, they can trip its overcurrent mode, cutting power; at that point, the charger re-negotiates its connection. In other wordsding!) But the Dart? No problems. Its small, gorgeous, lightweight (3 ounces!), fast, and chime-free. There are some footnotes. First, the prongs dont fold up, as they do on some chargers. And the Dart-C is back-ordered; the company says it has begun shipping, but new orders wont ship until next month. (Its worth noting that the actual Dart-Cthe brick itselfis identical to the original Dart charger, as first seen on Kickstarter. All thats new is the USB-C cable that plugs into it, which contains all the USB-C electronics and smarts. In fact, if you bought the original Dartthe one that comes with plug tips for a wide range of laptop modelsyou can get just the USB-C cable for it for $35.) Second, this charger costs $100, which is even more than Apples chargers ($70 and $80). Thats a drag. Im confident that in the new, open world of USB-C chargers, well have more compact, attractive, well-engineered options. For now, though, since this will be my one and only charger for all my gadgets, and since I travel a lot, and since space and weight are valued commodities in my laptop bag, Im going to bite the bullet. I have no problem saying it: The smallest laptop charger in the world is also one of the best. If youre a rabid USB-C nut like me, youll be in heaven. David Pogue, tech columnist for"
+    data = "This is a Nivetha example. The example should work."
     print NegativeExampleExtractor.get_negative_markers(data, 0, 0)
