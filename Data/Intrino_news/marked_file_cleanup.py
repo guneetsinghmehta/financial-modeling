@@ -38,4 +38,4 @@ def clean_files(folder_name):
 if __name__ == "__main__":
     # parser.feed('adflkj <br/><p>This is a <strong>akdjf</strong></p>')
     # print parser.string
-    clean_files("nivetha/done_files1")
+    clean_files("GuneetNew/cleanedup_files")

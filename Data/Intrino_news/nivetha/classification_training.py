@@ -57,7 +57,7 @@ class TrainFile():
 
 if __name__ == "__main__":
   file_trainer = TrainFile()
-  file_trainer.generate_training_data_for_folder('new_dict_files')
+  file_trainer.generate_training_data_for_folder('../training_features')
   a = file_trainer.get_vector_and_classes()
   #print(a[0])
   x= np.array(a[0])
