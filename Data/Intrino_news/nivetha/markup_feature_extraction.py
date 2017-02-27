@@ -53,6 +53,13 @@ class FeatureExtractorForCompany:
         words = [x for x in name.split(' ') if len(x) > 0]
         return len(words)
 
+    def negative_indicators_present(self, name):
+        name = name.lower().strip()
+        data_words = set([words for words in name.split() if len(name) > 0])
+        if "the" in data_words or "editors" in data_words or "university" in data_words:
+            return True
+        return False
+
     def get_dictionary(self, name):
         name = name.strip()
         name_lower = name.lower()
@@ -60,6 +67,7 @@ class FeatureExtractorForCompany:
         # self.company['company_name'] = name
         self.company['indicators_present'] = 1 if self.contains_relevant_indicators(name_lower) else 0
         # self.company['previous_indicator_occurence'] = self.count_previous_relevant_indicators()
+        self.company['negative_indicators_present'] = 1 if self.negative_indicators_present(name) else 0
         self.company['index_present'] = 1 if self.contains_index_indicators(name_lower) else 0
         self.company['capitalized_words'] = 1 if self.check_first_letters_capital(name) else 0
         self.company['digits_present'] = 1 if self.digit_present_in_name(name_lower) else 0
@@ -69,4 +77,4 @@ class FeatureExtractorForCompany:
 
 if __name__ == "__main__":
     feature_extractor = FeatureExtractorForCompany()
-    print feature_extractor.get_dictionary("Microsoft")
+    print feature_extractor.get_dictionary("The ")

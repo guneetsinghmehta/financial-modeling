@@ -30,10 +30,9 @@ class TrainFile():
       keys.sort()
       current_vector = []
       for key in keys:
+        if key == 'name':
+            self.word_names.append(company[key])
         if key == 'document' or key == 'name':
-          continue
-        if key == 'name' and company['class'] == 0:
-          self.word_names.append(company[key])
           continue
         if key == 'class':
           self.classes.append(company[key])
@@ -56,33 +55,35 @@ class TrainFile():
     return self.word_names
 
 if __name__ == "__main__":
-  file_trainer = TrainFile()
-  file_trainer.generate_training_data_for_folder('../training_features')
-  a = file_trainer.get_vector_and_classes()
-  #print(a[0])
-  x= np.array(a[0])
-  #print(a[1])
-  count_1 = sum(a[1])
-  print("Count 0: " + str(len(a[1])-count_1) + " Count 1 : " + str(count_1))
+  # file_trainer = TrainFile()
+  # file_trainer.generate_training_data_for_folder('classifier/train')
+  # a = file_trainer.get_vector_and_classes()
+  # print(a[0])
+  # x= np.array(a[0])
+  # print(a[1])
+  # count_1 = sum(a[1])
+  # print("Count 0: " + str(len(a[1])-count_1) + " Count 1 : " + str(count_1))
   # print("Names")
   # print(file_trainer.get_names())
-  y = np.array(a[1])
-  svmr_classifier=svm.SVC(gamma=0.001,C=100.0, kernel = 'rbf')
+  # y = np.array(a[1])
+  # svmr_classifier=svm.SVC(gamma=0.001,C=100.0, kernel = 'rbf')
   # svml_classifier=svm.SVC(gamma=0.001,C=100.0, kernel = 'linear')
   # svmp_classifier=svm.SVC(gamma=0.001,C=100.0, kernel = 'poly')
   # svms_classifier=svm.SVC(gamma=0.001,C=100.0, kernel = 'sigmoid')
-  dt_classifier = DecisionTreeClassifier(max_depth=None, min_samples_split=2,random_state=0)
-  rf_classifier = RandomForestClassifier(n_estimators=10, max_depth=None,min_samples_split=2, random_state=0)
-  logreg_classifier = LogisticRegression(C=1e5)
+  # dt_classifier = DecisionTreeClassifier(max_depth=None, min_samples_split=2,random_state=0)
+  # rf_classifier = RandomForestClassifier(n_estimators=10, max_depth=None,min_samples_split=2, random_state=0)
 
-  k_fold = KFold(n_splits=10)
-  precision, recall = 0,0
-  for train, test in k_fold.split(x):
-       y_pred = (svmr_classifier.fit(x[train], y[train])).predict(x[test])
-       val = precision_recall_fscore_support(y[test], y_pred, average='macro')
-       print(val)
-       precision, recall = precision + val[0], recall + val[1]
-  print("SVMR Classifier: ", precision/10, recall/10)
+  logreg_classifier = LogisticRegression(C=1e5)
+  #
+  # k_fold = KFold(n_splits=10)
+  # precision, recall = 0,0
+  # for train, test in k_fold.split(x):
+  #      print(train, test)
+  #      y_pred = (svmr_classifier.fit(x[train], y[train])).predict(x[test])
+  #      val = precision_recall_fscore_support(y[test], y_pred, average='macro')
+  #      print(val)
+  #      precision, recall = precision + val[0], recall + val[1]
+  # print("SVMR Classifier: ", precision/10, recall/10)
 
   #precision, recall = 0,0
   #for train, test in k_fold.split(x):
@@ -108,27 +109,53 @@ if __name__ == "__main__":
   #      precision, recall = precision + val[0], recall + val[1]
   #print("SVMS Classifier: ",precision/10, recall/10)
 
-  precision, recall = 0,0
-  for train, test in k_fold.split(x):
-        y_pred = (dt_classifier.fit(x[train], y[train])).predict(x[test])
-        val = precision_recall_fscore_support(y[test], y_pred, average='macro')
-        print(val)
-        precision, recall = precision + val[0], recall + val[1]
-  print("DT Classifier: ",precision/10, recall/10)
+  # precision, recall = 0,0
+  # for train, test in k_fold.split(x):
+  #       y_pred = (dt_classifier.fit(x[train], y[train])).predict(x[test])
+  #       val = precision_recall_fscore_support(y[test], y_pred, average='macro')
+  #       print(val)
+  #       precision, recall = precision + val[0], recall + val[1]
+  # print("DT Classifier: ",precision/10, recall/10)
+  #
+  # precision, recall = 0,0
+  # for train, test in k_fold.split(x):
+  #       y_pred = (rf_classifier.fit(x[train], y[train])).predict(x[test])
+  #       val = precision_recall_fscore_support(y[test], y_pred, average='macro')
+  #       print(val)
+  #       precision, recall = precision + val[0], recall + val[1]
+  # print("RF Classifier: ",precision/10, recall/10)
 
-  precision, recall = 0,0
-  for train, test in k_fold.split(x):
-        y_pred = (rf_classifier.fit(x[train], y[train])).predict(x[test])
-        val = precision_recall_fscore_support(y[test], y_pred, average='macro')
-        print(val)
-        precision, recall = precision + val[0], recall + val[1]
-  print("RF Classifier: ",precision/10, recall/10)
 
-  precision, recall = 0,0
-  for train, test in k_fold.split(x):
-        y_pred = (logreg_classifier.fit(x[train], y[train])).predict(x[test])
-        val = precision_recall_fscore_support(y[test], y_pred, average='macro')
-	    #print(classification_report(y[test], y_pred))
-        print(val)
-        precision, recall = precision + val[0], recall + val[1]
-  print("LOG REG Classifier: ",precision/10, recall/10)
+
+  train_file_trainer = TrainFile()
+  train_file_trainer.generate_training_data_for_folder("classifier/train")
+  train_set = train_file_trainer.get_vector_and_classes()
+  x_train = np.array(train_set[0])
+  y_train = np.array(train_set[1])
+
+  test_file_trainer = TrainFile()
+  test_file_trainer.generate_training_data_for_folder("classifier/test")
+  test_set = test_file_trainer.get_vector_and_classes()
+  test_set_names = test_file_trainer.get_names()
+  x_test = np.array(test_set[0])
+  y_test = np.array(test_set[1])
+  #
+  precision, recall = 0, 0
+  y_pred = (logreg_classifier.fit(x_train, y_train)).predict(x_test)
+  val = precision_recall_fscore_support(y_test, y_pred, average='macro')
+  print("Precision: " + str(val[0]))
+  print("Recall: " + str(val[1]))
+  # print(val)
+  # print("The values are: ")
+  # for i in range(len(y_pred)):
+  #     if int(y_pred[i]) != int(test_set[1][i]) and int(y_pred[i]) == 1:
+  #         print("predicted: " + str(y_pred[i]) + " actual: " + str(test_set[1][i]) + " name : |" + test_set_names[i] + "|")
+
+  # precision, recall = 0,0
+  # for train, test in k_fold.split(x):
+  #       y_pred = (logreg_classifier.fit(x[train], y[train])).predict(x_test)
+  #       val = precision_recall_fscore_support(y_test, y_pred, average='macro')
+  #    #print(classification_report(y[test], y_pred))
+  #       print(val)
+  #       precision, recall = precision + val[0], recall + val[1]
+  # print("LOG REG Classifier: ",precision/10, recall/10)

@@ -122,6 +122,8 @@ def get_dictionary_in_all_documents(source, destination):
 
 
 if __name__ == "__main__":
-    get_dictionary_in_all_documents("../training_data", "../training_features")
-    #get_dictionary_in_all_documents("../neha/done_files1", "new_dict_files")
-    #get_dictionary_in_all_documents("../Marked_files", "new_dict_files")
+    # get_dictionary_in_all_documents("../training_data", "../training_features")
+    get_dictionary_in_all_documents("../Marked_files", "new_dict_files")
+    # get_dictionary_in_all_documents("done_files1", "new_dict_files")
+    get_dictionary_in_all_documents("../neha/done_files1", "new_dict_files")
+    get_dictionary_in_all_documents("../GuneetNew/cleanedup_files", "new_dict_files")

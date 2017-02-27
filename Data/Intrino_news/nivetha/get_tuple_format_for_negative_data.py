@@ -35,13 +35,14 @@ class NegativeExampleExtractor():
 
     @staticmethod
     def should_filter(words, filter_list):
-        return False
+        filter_list = set(['the', 'editors', 'capital', 'trump', 'ajo,', 'lp', 'alzheimers', 'university'])
+        # return False
         # should filter the words present in the filter list
         if words.lower().strip() in filter_list:
             return True
-        # return False
+        return False
         # remove if the word length is less than 3
-        if len(words.strip()) < 4:
+        if len(words.strip()) < 3:
             return True
         # return False
         # # remove if the words are all caps
@@ -57,6 +58,7 @@ class NegativeExampleExtractor():
             lines = f.readlines()
             lines = ",".join(lines)
             filter_list = [ x.strip().lower() for x in lines.split(',') if len(x.strip()) > 0 ]
+        filter_list = set(filter_list)
         # print filter_list
         return filter_list
 
