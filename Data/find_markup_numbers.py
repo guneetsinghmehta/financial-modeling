@@ -1,7 +1,7 @@
 import glob
 import re
 #indir = '/Users/nehamittal/github/financial-modeling/Data/Intrino_news/nivetha/done_files/*.txt'
-indir = '/Users/nehamittal/github/financial-modeling/Data/Intrino_news/Marked_files/*.txt'
+indir = 'Intrino_news/nivetha/output_files/test/*.txt'
 def find_all(a_str, sub):
     start = 0
     ans=0
@@ -20,4 +20,3 @@ for f in fileList:
     markups=markups+find_all(line,pattern)
 
 print(markups)
-    

@@ -35,6 +35,7 @@ class NegativeExampleExtractor():
 
     @staticmethod
     def should_filter(words, filter_list):
+        # return False
         filter_list = set(['the', 'editors', 'capital', 'trump', 'ajo,', 'lp', 'alzheimers', 'university'])
         # return False
         # should filter the words present in the filter list

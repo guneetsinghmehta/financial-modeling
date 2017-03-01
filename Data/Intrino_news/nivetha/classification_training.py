@@ -56,7 +56,7 @@ class TrainFile():
 
 if __name__ == "__main__":
   # file_trainer = TrainFile()
-  # file_trainer.generate_training_data_for_folder('classifier/train')
+  # file_trainer.generate_training_data_for_folder('new_dict_files')
   # a = file_trainer.get_vector_and_classes()
   # print(a[0])
   # x= np.array(a[0])
@@ -74,9 +74,10 @@ if __name__ == "__main__":
   # rf_classifier = RandomForestClassifier(n_estimators=10, max_depth=None,min_samples_split=2, random_state=0)
 
   logreg_classifier = LogisticRegression(C=1e5)
-  #
-  # k_fold = KFold(n_splits=10)
+  # #
   # precision, recall = 0,0
+  # k_fold = KFold(n_splits=10)
+
   # for train, test in k_fold.split(x):
   #      print(train, test)
   #      y_pred = (svmr_classifier.fit(x[train], y[train])).predict(x[test])
@@ -153,9 +154,9 @@ if __name__ == "__main__":
 
   # precision, recall = 0,0
   # for train, test in k_fold.split(x):
-  #       y_pred = (logreg_classifier.fit(x[train], y[train])).predict(x_test)
-  #       val = precision_recall_fscore_support(y_test, y_pred, average='macro')
-  #    #print(classification_report(y[test], y_pred))
+  #       y_pred = (logreg_classifier.fit(x[train], y[train])).predict(x[test])
+  #       val = precision_recall_fscore_support(y[test], y_pred, average='macro')
+  #       #print(classification_report(y[test], y_pred))
   #       print(val)
   #       precision, recall = precision + val[0], recall + val[1]
   # print("LOG REG Classifier: ",precision/10, recall/10)
