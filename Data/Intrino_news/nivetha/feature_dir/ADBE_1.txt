@@ -1,2 +1,0 @@
-{'special_symbols_present': 0, 'occurence_count': 1, 'name_length': 2, 'index_present': 0, 'starting_position': 185, 'previous_indicator_occurence': 0, 'digits_present': 0, 'capitalized_words': 1, 'ending_position': 200, 'document': 'ADBE_1.txt', 'indicators_present': 1, 'first_word': 0}
-{'special_symbols_present': 1, 'occurence_count': 1, 'name_length': 3, 'index_present': 0, 'starting_position': 661, 'previous_indicator_occurence': 0, 'digits_present': 0, 'capitalized_words': 1, 'ending_position': 678, 'document': 'ADBE_1.txt', 'indicators_present': 1, 'first_word': 0}
